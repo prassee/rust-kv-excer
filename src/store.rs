@@ -19,7 +19,7 @@ impl KeyValeRepo {
         self.repo.remove(&key);
     }
 
-    pub fn get(&mut self, key: String) -> String {
+    pub fn get(&self, key: String) -> String {
         format!("{}", self.repo.get(&key).unwrap())
     }
 }
